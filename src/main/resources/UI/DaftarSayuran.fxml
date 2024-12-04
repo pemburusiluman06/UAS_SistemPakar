@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DaftarSayuranController">
+    <children>
+        <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FFE1A0;">
+            <children>
+                <TableView id="tabel_sayuran" fx:id="tabel_sayuran" layoutX="50.0" layoutY="50.0" prefHeight="300.0" prefWidth="500.0" style="-fx-background-color: transparent; -fx-border-color: transparent;">
+                    <columns>
+                        <TableColumn id="kolom_nama_sayur" fx:id="kolom_nama_sayur" prefWidth="166.0" text="Nama Sayur" />
+                        <TableColumn id="kolom_deskripsi_sayur" fx:id="kolom_deskripsi_sayur" prefWidth="332.0" text="Deskripsi" />
+                    </columns>
+                </TableView>
+            <Button id="btn_kembali" fx:id="btn_kembali" layoutX="47.0" layoutY="356.0" mnemonicParsing="false" style="-fx-background-color: #304F6D; -fx-background-radius: 10;" text="Kembali" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
