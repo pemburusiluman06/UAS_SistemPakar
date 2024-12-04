@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane accessibleRole="MENU_ITEM" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SistemPakarController">
+   <children>
+      <Text layoutX="261.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SISTEM PAKAR" />
+      <Button fx:id="btn_kembali" layoutX="28.0" layoutY="351.0" mnemonicParsing="false" text="Kembali" />
+      <Button fx:id="btn_inferensi" layoutX="275.0" layoutY="281.0" mnemonicParsing="false" text="CEK" />
+      <MenuButton fx:id="menu_musim" layoutX="247.0" layoutY="95.0" mnemonicParsing="false" text="Pilih Musim">
+        <items>
+          <MenuItem fx:id="musim_hujan" mnemonicParsing="false" text="Hujan" />
+          <MenuItem fx:id="musim_kemarau" mnemonicParsing="false" text="Kemarau" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="menu_ketinggian" layoutX="236.0" layoutY="132.0" mnemonicParsing="false" text="Pilih Ketinggian">
+        <items>
+          <MenuItem fx:id="tinggi_rendah" mnemonicParsing="false" text="Rendah" />
+          <MenuItem fx:id="tinggi_sedang" mnemonicParsing="false" text="Sedang" />
+            <MenuItem fx:id="tinggi_tinggi" mnemonicParsing="false" text="Tinggi" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="menu_ph" layoutX="257.0" layoutY="175.0" mnemonicParsing="false" text="Pilih PH">
+        <items>
+          <MenuItem fx:id="ph_asam" mnemonicParsing="false" text="PH Asam" />
+          <MenuItem fx:id="ph_netral" mnemonicParsing="false" text="PH Netral" />
+            <MenuItem fx:id="ph_basa" mnemonicParsing="false" text="PH Basa" />
+        </items>
+      </MenuButton>
+      <MenuButton fx:id="menu_tanah" layoutX="234.0" layoutY="211.0" mnemonicParsing="false" text="Pilih Jenis Tanah">
+        <items>
+          <MenuItem fx:id="tanah_lempung" mnemonicParsing="false" text="Tanah Lempung" />
+          <MenuItem fx:id="tanah_gambut" mnemonicParsing="false" text="Tanah Gambut" />
+            <MenuItem fx:id="tanah_liat" mnemonicParsing="false" text="Tanah Liat" />
+            <MenuItem fx:id="tanah_gembur" mnemonicParsing="false" text="Tanah Gembur" />
+        </items>
+      </MenuButton>
+   </children>
+</AnchorPane>
